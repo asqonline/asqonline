@@ -136,7 +136,7 @@ disqusShortname = ""
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "Offshore Staffing & Engineering Consultancy"
-    subtitle = "ASQ is the strategic partner of EMAPTA (No. 1 BPO firm in the Philippines) in Vietnam for offshore staffing in various business sectors beside its founding services in Asset Management and Data Solutions for Engineering Systems."
+    subtitle = "ASQ is a strategic partner of EMAPTA (No. 1 BPO firm in the Philippines and Australia) in Vietnam for offshore staffing in various business sectors beside its founding services in Asset Management and Data Solutions for Engineering Systems. ASQ's research team is collaborating with Kyoto University, ETH Zurich, and the Institute of Smart City and Management of University of Economics Ho Chi Minh to provide training and education services for students and professionals as well as to conduct research on urban planning and asset management."
     buttonText = "Get Started"
     image = "/banner/banner.jpg"
 
@@ -154,7 +154,7 @@ disqusShortname = ""
 
     [[params.tiles.showcase]]
       title = "Offshore Staffing"
-      subtitle = "In partnering with EMAPTA (No. 1 BPO firm in the Philippines), ASQ offers highly qualified Vietnamese staffs for global Clients in various areas such as engineering design drafting and modelling, software development, paralegal services, and data analytics. Ultilizing EMAPTA's best practices and systems, ASQ team is confident to deliver quality works meeting Client's requirements and expectation. Kindly visit website of EMAPTA www.emapta.com for further information."
+      subtitle = "In partnering with EMAPTA (No. 1 BPO firm in the Philippines and Australia), ASQ offers highly qualified Vietnamese staffs for global Clients in various areas such as engineering design drafting and modelling, software development, paralegal services, and data analytics. Ultilizing EMAPTA's best practices and systems, ASQ team is confident to deliver quality works meeting Client's requirements and expectation. Kindly visit website of EMAPTA www.emapta.com for further information."
   #    image = "/banner/pic02.jpg"
   #    url = "whatwedo/tdd"
 
