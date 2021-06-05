@@ -162,20 +162,23 @@ disqusShortname = ""
       title = "Technical Due Diligence"
       subtitle = "We conduct Due Diligence studies on building systems, Infrastructure systems, and industrial sites using innovative digital tools and by experienced engineers to help Capital Investors arriving at optimal Merging and Acquisition decisions"
       image = "/banner/pic02.jpg"
-      url = "whatwedo/tdd"
+#      url = "whatwedo/tdd"
+      url = "/about/ASQ-brochure-English.pdf"
+
 
     [[params.tiles.showcase]]
       title = "Asset Management"
       subtitle = "We assist organizations to develop long term asset management blueprints and programs for sustainable growth. We build models to determine optimal preventive intervention strategies on assets using reliability based approach"
       image = "/banner/pic03.jpg"
-      url = "whatwedo/am"
+  #    url = "whatwedo/am"
+      url = "/about/ASQ-brochure-English.pdf"
 
     [[params.tiles.showcase]]
       title = "Data Analytics and Modelling"
       subtitle = "We detect trends and identify bottlenecks of engineering systems using data science and advise Clients on effective solutions"
       image = "/banner/pic04.jpg"
-      url = "whatwedo/datascience"
-
+  #    url = "whatwedo/datascience"
+      url = "/about/ASQ-brochure-English.pdf"
     # [[params.tiles.showcase]]
     #   title = "Construction Marketing"
     #   subtitle = "Conducting market research in construction sector and help Clients to select optimal sites or materials using supply and demand analysis"
@@ -184,9 +187,9 @@ disqusShortname = ""
 
     [[params.tiles.showcase]]
       title = "Research & Education "
-      subtitle = "In close collaboration with ETH Zurich, Kyoto University, and local universities, we are contributing to training & education for a next generation of reliability engineers in the region"
+      subtitle = "In close collaboration with ETH Zurich, Kyoto University, and Institute of Smart City and Management at the University of Economics Ho Chi Minh, we are providing short courses on data analytics and asset management for students and professionals."
       image = "/banner/pic06.jpg"
-      url = "whatwedo/training"
+#      url = "whatwedo/training"
 
 #    [[params.tiles.showcase]]
 #      title = "Brochure "
