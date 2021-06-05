@@ -324,7 +324,7 @@ disqusShortname = ""
           subtitle = ""
           menu = "Trang Chủ"
           # Optional logo as brand stored in img/
-           logo = "/banner/logo.jpg"
+           logo = "/banner/logo.png"
 
     #      [[languages.vi.params.navigation.links]]
     #        name = "Tin Tức"
