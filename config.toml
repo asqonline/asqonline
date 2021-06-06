@@ -89,9 +89,9 @@ disqusShortname = ""
 #        url = "apps/"
 
 
-       [[params.navigation.links]]
-        name = "Our Expertise"
-        url = "whatwedo"
+  #     [[params.navigation.links]]
+  #      name = "Our Expertise"
+  #      url = "whatwedo"
 
 
 #    [[params.navigation.links]]
@@ -324,7 +324,7 @@ disqusShortname = ""
           subtitle = ""
           menu = "Trang Chủ"
           # Optional logo as brand stored in img/
-           logo = "/banner/logo.png"
+           logo = "/banner/logo.jpg"
 
     #      [[languages.vi.params.navigation.links]]
     #        name = "Tin Tức"
