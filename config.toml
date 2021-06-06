@@ -242,21 +242,30 @@ disqusShortname = ""
     email = "contact@asq.vn"
 
     [[params.contact.phone]]
-    title = "Phone"
-    phone = "+84 9 6154 9824"
+#    title = "Paul Nguyen"
+    phone = "+84 9 6154 9824 (Japanese/English)"
+
+    [[params.contact.phone]]
+#    title = "Nam Le"
+    phone = "+84 9 9378 0100 (Whatsapp, Viber, Lines, Zalo)"
+
 
     [[params.contact.address]]
-    title = "Hanoi Office"
-    street = "498 De La Thanh, Dong Da, Hanoi"
+    title =   "Hanoi Office"
+    street =  "498 De La Thanh, Dong Da, Hanoi"
 
   #  city = "Hung Yen"
   #  country = "Vietnam"
 
     [[params.contact.address]]
-    title = "Ho Chi Minh Office"
-    street = "DragonHill, 15A Nguyen Huu Tho, Nha Be"
+    title =   "Ho Chi Minh Office"
+    street =  "DragonHill, 15A Nguyen Huu Tho, Nha Be"
 
-  #  city = "Hung Yen"
+
+    [[params.contact.address]]
+    title =   "Manila Office"
+    street =  "Hildago Place, Rockwell, Makati, the Philippines"
+    city =    "+63 927 022 1899"
   #  country = "Vietnam"
 
 #  [[params.contact.address]]
@@ -406,15 +415,16 @@ disqusShortname = ""
           [[languages.vi.params.tiles.showcase]]
             title = "Đánh giá các hệ thống kĩ thuật công trình"
             subtitle = "ASQ giúp chủ đầu tư đưa ra được các quyết định chiến lược trong việc mua và sát nhập qua việc khảo sát và đánh giá và thẩm tra các hệ thống kĩ thuật như tòa nhà, công trình công nghiệp và nhà máy"
-            url = "vi/whatwedo/tdd"
-
+  #          url = "vi/whatwedo/tdd"
+            url = "/about/ASQ-brochure-English.pdf"
             image = "/banner/pic02.jpg"
             # url = "blogs/aliquam"
 
           [[languages.vi.params.tiles.showcase]]
             title = "Quản lý tài sản công trình và thiết bị"
             subtitle = "ASQ giúp doanh nghiệp và các tổ chức quản lý tốt tài sản thông qua việc phát triển các kế hoạch chiến lược và xây dựng các mô hình toán tối ưu để đưa ra các biện pháp bảo hành và bảo trì hợp lý và tối ưu"
-            url = "whatwedo/am"
+    #        url = "whatwedo/am"
+          url = "/about/ASQ-brochure-English.pdf"
             image = "/banner/pic03.jpg"
             # url = "blogs/tempus"
 
@@ -422,7 +432,8 @@ disqusShortname = ""
             title = "Phân tích và xử lý dữ liệu"
             subtitle = "Sử dụng các mô hình thống kê và cơ sở dữ liệu lớn để dự báo xu hướng và phát hiện ra các vấn đề của hệ thống, từ đó đưa ra cảnh báo sớm và các phương pháp xử lý tối ưu"
             image = "/banner/pic04.jpg"
-            url = "whatwedo/datascience"
+            url = "/about/ASQ-brochure-English.pdf"
+    #        url = "whatwedo/datascience"
             # url = "blogs/magna"
 
           # [[languages.vi.params.tiles.showcase]]
@@ -441,7 +452,7 @@ disqusShortname = ""
             title = "Nghiên cứu và Giáo Dục"
             subtitle = "Phối hợp và cộng tác với  nhóm nghiên cứu của học viện ETH, Zurich, Thụy Sĩ và đại học Kyoto trong công tác nghiên cứu và giảng dạy, trang bị cho các kĩ sư tương lai các kiến thức tính toán độ tin cậy, thống kê, vận trù học, và toán ứng dụng tối ưu hệ thống"
             image = "/banner/pic06.jpg"
-            url = "whatwedo/training"
+  #          url = "whatwedo/training"
             # url = "blogs/ipsum"
           # You can make more showcases by copy and pasting the code above
 
@@ -496,19 +507,33 @@ disqusShortname = ""
           email = "contact@asq.vn"
 
           [[languages.vi.params.contact.phone]]
-          title = "Điện thoại"
-          phone = "+84 9 6154 9824"
+    #      title = "Paul Nguyễn"
+          phone = "+84 9 6154 9824 (Tiếng Nhật/Tiếng Anh)"
+
+          [[languages.vi.params.contact.phone]]
+#          title = "Whatsapp, Lines, Viber, Zalo"
+          phone = "+84 9 8378 0100 (Whatsapp, Lines, Viber, Zalo)"
+
+    #      [[languages.vi.params.contact.phone]]
+    #      title = "Văn phòng Manila"
+    #      phone = "+63 927 022 1899"
 
           [[languages.vi.params.contact.address]]
-          title = "Văn phòng Hà Nội"
-          street = "498 Đê La Thành, Đống Đa, Hà Nội"
-    #      city = "Văn Giang, Hưng Yên"
+          title =   "Văn phòng tp. Hồ Chí Minh"
+          street =  "DragonHill, 15A Nguyễn Hữu Thọ, Nhà Bè"
+  #        city =    "+84 9 8378 0100 (Whatsapp, Lines, Viber, Zalo)"
+
+          [[languages.vi.params.contact.address]]
+          title =   "Văn phòng Hà Nội"
+          street =  "498 Đê La Thành, Đống Đa, Hà Nội"
+    #      city =    "+84 9 6154 9824 (Tiếng Nhật/Tiếng Anh)"
     #      country = "Việt Nam"
 
+
           [[languages.vi.params.contact.address]]
-          title = "Văn phòng tp. Hồ Chí Minh"
-          street = "DragonHill, 15A Nguyễn Hữu Thọ, Nhà Bè"
-#      city = "Văn Giang, Hưng Yên"
+          title =   "Văn phòng tp. Manila"
+          street =  "Hildago Place, Rockwell, Makati, Philippines"
+          city =    "+63 927 022 1899"
 #      country = "Việt Nam"
 
 
