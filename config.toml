@@ -73,7 +73,7 @@ disqusShortname = ""
     subtitle = ""
     menu = "Menu"
     # Optional logo as brand stored in img/
-     logo = "/banner/logo.jpg"
+     logo = "/banner/logo.png"
 
     [[params.navigation.links]]
       name = "Home"
@@ -150,7 +150,7 @@ disqusShortname = ""
       title = "Who We Are"
       subtitle = "A spin-off start up team originated in 2012 from ETH Zurich and Kyoto University. We are specialists in asset management for engineering systems and transportation engineering. In 2020, we signed a strategic partnership with EMAPTA to provide highly qualified Vietnamese staffs in various professional for offshore staffing services for Clients worldwide."
       image = "/banner/pic01.jpg"
-      url = "about/"
+  #    url = "about/"
 
     [[params.tiles.showcase]]
       title = "Offshore Staffing"
@@ -333,7 +333,7 @@ disqusShortname = ""
           subtitle = ""
           menu = "Trang Chủ"
           # Optional logo as brand stored in img/
-           logo = "/banner/logo.jpg"
+           logo = "/banner/logo.png"
 
     #      [[languages.vi.params.navigation.links]]
     #        name = "Tin Tức"
@@ -401,7 +401,7 @@ disqusShortname = ""
             title = "Giới thiệu"
             subtitle = "ASQ được thành lập như là một sản phẩm Spin-off từ các công trình nghiên cứu tại viện công nghệ thụy Sĩ ETH và đại học Kyoto Nhật Bản từ năm 2012. ASQ có thế mạnh trong lĩnh vực áp dụng các mô hình toán xác xuất thống kê và toán ứng dụng trong lĩnh vực xây dựng và quản lý thiết bị và tài sản hạ tầng. Vào năm 2020, ASQ hợp tác với công ty EMAPTA cung cấp dịch vụ cung cứng lao động chất lượng cao cho thị trường quốc tế thông qua mô hình BPO."
             image = "/banner/pic01.jpg"
-            url = "vi/about/"
+#            url = "vi/about/"
             # url = "blogs/aliquam"
 
           [[languages.vi.params.tiles.showcase]]
