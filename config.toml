@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "ASQ - Aspiring for Quality"
+title = "ASQ - Offshore Staffing and Asset Management"
 theme = "forty"
 
 DefaultContentLanguage = "en"
@@ -10,13 +10,13 @@ DefaultContentLanguage = "en"
 [languages]
   [languages.en]
     contentDir = "content/en"
-    title = "ASQ - Aspiring for Quality"
+    title = "ASQ - Offshore Staffing and Asset Management"
   #  staticDir2 = "static"
     languageName = "English"
     weight = 1
   [languages.vi]
     contentDir = "content/vi"
-    title = "ASQ - Aspiring for Quality"
+    title = "ASQ - Offshore Staffing and Asset Management"
     languageName = "Tiếng Việt"
   #  staticDir = ["staticDir_override", "static_vi"]
     weight = 2
@@ -51,7 +51,7 @@ disqusShortname = ""
   # CSS class.
 
   # Provide your metadata here.
-  name = "ASQ - Aspiring for Quality"
+  name = "ASQ - Offshore Staffing and Asset Management"
   description = "ASQ is a spin-off start up Team originated from ETH Zurich and Kyoto University specialized in engineering asset management and data analytics and data solution for engineering systems."
 
   # Link custom assets relative to /static
