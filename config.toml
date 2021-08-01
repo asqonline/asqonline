@@ -249,6 +249,14 @@ disqusShortname = ""
 #    title = "Nam Le"
     phone = "+84 9 9378 0100 (Whatsapp, Viber, Lines, Zalo)"
 
+    [[params.contact.address]]
+    title =   "Registered Office - Ho Chi Minh"
+    street =  "106/2 Commute 5, str. 185, Ward Phuoc Long, Thu Duc City, Ho Chi Minh"
+
+    [[params.contact.address]]
+    title =   "Communication Office - Ho Chi Minh"
+    street =  "DragonHill, 15A Nguyen Huu Tho, Nha Be"
+
 
     [[params.contact.address]]
     title =   "Hanoi Office"
@@ -256,10 +264,6 @@ disqusShortname = ""
 
   #  city = "Hung Yen"
   #  country = "Vietnam"
-
-    [[params.contact.address]]
-    title =   "Ho Chi Minh Office"
-    street =  "DragonHill, 15A Nguyen Huu Tho, Nha Be"
 
 
     [[params.contact.address]]
@@ -278,7 +282,7 @@ disqusShortname = ""
   # Footer section
   [params.footer]
     enable = true
-    copyright = "ASQ - Aspiring for Quality - Company Registration No. 0316899312"
+    copyright = "ASQ Vietnam - Company Registration No. 0316899312"
 
 
 
@@ -521,14 +525,19 @@ disqusShortname = ""
     #      phone = "+63 927 022 1899"
 
           [[languages.vi.params.contact.address]]
-          title =   "Văn phòng tp. Hồ Chí Minh"
-          street =  "DragonHill, 15A Nguyễn Hữu Thọ, Nhà Bè"
+          title =   "Trụ Sở Đăng Kí"
+          street =  "106/2 khu phố 5, đường 185, Phường Phước Long, Thành phố Thủ Đức"
   #        city =    "+84 9 8378 0100 (Whatsapp, Lines, Viber, Zalo)"
+
+        [[languages.vi.params.contact.address]]
+        title =   "Văn phòng giao dịch - tp. Hồ Chí Minh"
+        street =  "DragonHill, 15A Nguyễn Hữu Thọ, Nhà Bè"
+        city =    "+84 9 8378 0100 (Whatsapp, Lines, Viber, Zalo)"
 
           [[languages.vi.params.contact.address]]
           title =   "Văn phòng Hà Nội"
           street =  "498 Đê La Thành, Đống Đa, Hà Nội"
-    #      city =    "+84 9 6154 9824 (Tiếng Nhật/Tiếng Anh)"
+    #     city =    "+84 9 6154 9824 (Tiếng Nhật/Tiếng Anh)"
     #      country = "Việt Nam"
 
 
@@ -542,7 +551,7 @@ disqusShortname = ""
         # Footer section
         [languages.vi.params.footer]
           enable = true
-          copyright = "ASQ - Aspiring for Quality - Giấy Phép đăng kí kinh doanh số 0316899312"
+          copyright = "ASQ Vietnam - Giấy Phép đăng kí kinh doanh số 0316899312"
 
           # Uses font awesome icons
 
