@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "ASQ - Offshore Staffing and Asset Management"
+title = "ASQ Viet Nam"
 theme = "forty"
 
 DefaultContentLanguage = "en"
@@ -10,13 +10,13 @@ DefaultContentLanguage = "en"
 [languages]
   [languages.en]
     contentDir = "content/en"
-    title = "ASQ - Offshore Staffing and Asset Management"
+    title = "ASQ Viet Nam"
   #  staticDir2 = "static"
     languageName = "English"
     weight = 1
   [languages.vi]
     contentDir = "content/vi"
-    title = "ASQ - Offshore Staffing and Asset Management"
+    title = "ASQ Viet Nam"
     languageName = "Tiếng Việt"
   #  staticDir = ["staticDir_override", "static_vi"]
     weight = 2
@@ -51,7 +51,7 @@ disqusShortname = ""
   # CSS class.
 
   # Provide your metadata here.
-  name = "ASQ - Offshore Staffing and Asset Management"
+  name = "ASQ Viet Nam"
   description = "ASQ is a spin-off start up Team originated from ETH Zurich and Kyoto University specialized in engineering asset management and data analytics and data solution for engineering systems."
 
   # Link custom assets relative to /static
@@ -70,10 +70,10 @@ disqusShortname = ""
   # Navigation Section
   [params.navigation]
     title = "ASQ"
-    subtitle = ""
+    subtitle = "For a better change"
     menu = "Menu"
     # Optional logo as brand stored in img/
-     logo = "/banner/logo.png"
+  #   logo = "/banner/logo.png"
 
     [[params.navigation.links]]
       name = "Home"
@@ -135,7 +135,7 @@ disqusShortname = ""
   [params.banner]
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
-    title = "Offshore Staffing & Engineering Consultancy"
+    title = "ASQ Viet Nam"
     subtitle = "ASQ is a strategic partner of EMAPTA (No. 1 BPO firm in the Philippines and Australia) in Vietnam for offshore staffing in various business sectors beside its founding services in Asset Management and Data Solutions for Engineering Systems. ASQ's research team is collaborating with Kyoto University, ETH Zurich, and the Institute of Smart City and Management of University of Economics Ho Chi Minh to provide training and education services for students and professionals as well as to conduct research on urban planning and asset management."
     buttonText = "Get Started"
     image = "/banner/banner.jpg"
@@ -148,37 +148,46 @@ disqusShortname = ""
 
     [[params.tiles.showcase]]
       title = "Who We Are"
-      subtitle = "A spin-off start up team originated in 2012 from ETH Zurich and Kyoto University. We are specialists in asset management for engineering systems and transportation engineering. In 2020, we signed a strategic partnership with EMAPTA to provide highly qualified Vietnamese staffs in various professional for offshore staffing services for Clients worldwide."
-      image = "/banner/pic01.jpg"
+      subtitle = "We are a team of professional research engineers, data scientists, business consultants, and educators. Our company offers two main stream of businesses: (1) Offshore Staffing and (2) Engineering Consultancy for nature and build assets. We are closely collaborating with Kyoto University, ETH Zurich, and Institute of Smart Cities and Management in Ho Chi Minh on conducting research and providing educational courses for students and future leaders."
+    #  image = "/banner/pic01.jpg"
   #    url = "about/"
+
+# Originated in 2012 as a spin-off start up team from ETH Zurich, Switzerland and Kyoto University, Japan, We initially offerred engineering services in asset management and transportation engineering. Since 2020, ASQ has expanded services to offshore staffing and business process outsourcing services in various disciplines to Clients worldwide.
 
     [[params.tiles.showcase]]
       title = "Offshore Staffing"
-      subtitle = "In partnering with EMAPTA (No. 1 BPO firm in the Philippines and Australia), ASQ offers highly qualified Vietnamese staffs for global Clients in various areas such as engineering design drafting and modelling, software development, paralegal services, and data analytics. Ultilizing EMAPTA's best practices and systems, ASQ team is confident to deliver quality works meeting Client's requirements and expectation. Kindly visit website of EMAPTA www.emapta.com for further information."
+      subtitle = "In partnering with EMAPTA (No. 1 BPO firm in the Philippines and Australia), ASQ offers highly qualified Vietnamese staffs for global Clients in various areas such as engineering design drafting and modelling, software development, paralegal services, and data analytics. Ultilizing EMAPTA's best practices and systems, ASQ team is confident to deliver quality works meeting Client's requirements and expectation."
   #    image = "/banner/pic02.jpg"
   #    url = "whatwedo/tdd"
 
-    [[params.tiles.showcase]]
-      title = "Technical Due Diligence"
-      subtitle = "We conduct Due Diligence studies on building systems, Infrastructure systems, and industrial sites using innovative digital tools and by experienced engineers to help Capital Investors arriving at optimal Merging and Acquisition decisions"
-      image = "/banner/pic02.jpg"
-#      url = "whatwedo/tdd"
-      url = "/about/ASQ-brochure-English.pdf"
+
+  [[params.tiles.showcase]]
+    title = "Engineering Consultancy for Nature and Built Assets"
+    subtitle = "We offer a number of unique engineering services that requires high level of professionalism and expertises including urban asset management, transportation engineering and impact assessment, urban risk and resilience analysis, flood study and modelling, technical and environmental due diligence, and data analytics."
+#    image = "/banner/pic02.jpg"
+    url = "/about/ASQ-brochure-English.pdf"
+
+#     [[params.tiles.showcase]]
+#       title = "Technical Due Diligence"
+#       subtitle = "We conduct Due Diligence studies on building systems, Infrastructure systems, and industrial sites using innovative digital tools and by experienced engineers to help Capital Investors arriving at optimal Merging and Acquisition decisions"
+#       image = "/banner/pic02.jpg"
+# #      url = "whatwedo/tdd"
+#       url = "/about/ASQ-brochure-English.pdf"
 
 
-    [[params.tiles.showcase]]
-      title = "Asset Management"
-      subtitle = "We assist organizations to develop long term asset management blueprints and programs for sustainable growth. We build models to determine optimal preventive intervention strategies on assets using reliability based approach"
-      image = "/banner/pic03.jpg"
-  #    url = "whatwedo/am"
-      url = "/about/ASQ-brochure-English.pdf"
+  #   [[params.tiles.showcase]]
+  #     title = "Asset Management"
+  #     subtitle = "We assist organizations to develop long term asset management blueprints and programs for sustainable growth. We build models to determine optimal preventive intervention strategies on assets using reliability based approach"
+  #     image = "/banner/pic03.jpg"
+  # #    url = "whatwedo/am"
+  #     url = "/about/ASQ-brochure-English.pdf"
 
-    [[params.tiles.showcase]]
-      title = "Data Analytics and Modelling"
-      subtitle = "We detect trends and identify bottlenecks of engineering systems using data science and advise Clients on effective solutions"
-      image = "/banner/pic04.jpg"
-  #    url = "whatwedo/datascience"
-      url = "/about/ASQ-brochure-English.pdf"
+  #   [[params.tiles.showcase]]
+  #     title = "Data Analytics and Modelling"
+  #     subtitle = "We detect trends and identify bottlenecks of engineering systems using data science and advise Clients on effective solutions"
+  #     image = "/banner/pic04.jpg"
+  # #    url = "whatwedo/datascience"
+  #     url = "/about/ASQ-brochure-English.pdf"
     # [[params.tiles.showcase]]
     #   title = "Construction Marketing"
     #   subtitle = "Conducting market research in construction sector and help Clients to select optimal sites or materials using supply and demand analysis"
@@ -186,9 +195,9 @@ disqusShortname = ""
     #   url = "blogs/ipsum"
 
     [[params.tiles.showcase]]
-      title = "Research & Education "
+      title = "Education & Training"
       subtitle = "In close collaboration with ETH Zurich, Kyoto University, and Institute of Smart City and Management at the University of Economics Ho Chi Minh, we are providing short courses on data analytics and asset management for students and professionals."
-      image = "/banner/pic06.jpg"
+    #   image = "/banner/pic06.jpg"
 #      url = "whatwedo/training"
 
 #    [[params.tiles.showcase]]
@@ -216,10 +225,10 @@ disqusShortname = ""
 
 
   # Contact section
-  [params.contact]
-    enable = true
-    buttonSend = "Send message"
-    buttonClear = "Clear"
+#  [params.contact]
+#    enable = true
+#    buttonSend = "Send message"
+#    buttonClear = "Clear"
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -282,20 +291,24 @@ disqusShortname = ""
   # Footer section
   [params.footer]
     enable = true
+    correspondence = "CONTACT US: Email: contact@asq.vn  -  Tel: +84 9 9378 0100 (Whatsapp, Viber, Lines, Zalo) -  +84 9 6154 9824 (Japanese/English)"
+    address1 = "Registered Office: 106/2 Commute 5, str. 185, Ward Phuoc Long, Thu Duc City"
+    giaodich = "Correspondence Office: DragonHill, 15A Nguyen Huu Thọ, Nha Be, Ho Chi Minh"
+    address2 = "Hanoi Office: 498 De La Thanh, Dong Da"
     copyright = "ASQ Vietnam - Company Registration No. 0316899312"
 
 
 
 
-    [[params.footer.social]]
-      icon = "fa-github"
-      url= "https://www.github.com"
-      label = "GitHub"
+#    [[params.footer.social]]
+#      icon = "fa-github"
+#      url= "https://www.github.com"
+#      label = "GitHub"
 
-    [[params.footer.social]]
-      icon = "fa-linkedin"
-      url= "https://www.linkedin.com"
-      label = "LinkedIn"
+#    [[params.footer.social]]
+#      icon = "fa-linkedin"
+#      url= "https://www.linkedin.com"
+#      label = "LinkedIn"
 
     # [[params.footer.quicklinks]]
     #   text = "Design: "
@@ -334,10 +347,10 @@ disqusShortname = ""
         # Navigation Section
         [languages.vi.params.navigation]
           title = "ASQ"
-          subtitle = ""
+          subtitle = "For a better change"
           menu = "Trang Chủ"
           # Optional logo as brand stored in img/
-           logo = "/banner/logo.png"
+  #         logo = "/banner/logo.png"
 
     #      [[languages.vi.params.navigation.links]]
     #        name = "Tin Tức"
@@ -487,10 +500,10 @@ disqusShortname = ""
 
 
         # Contact section
-        [languages.vi.params.contact]
-          enable = true
-          buttonSend = "Gửi tin"
-          buttonClear = "Xóa"
+  #      [languages.vi.params.contact]
+  #        enable = true
+  #        buttonSend = "Gửi tin"
+  #        buttonClear = "Xóa"
 
           # Since this template is static, the contact form uses www.formspree.io as a
           # proxy. The form makes a POST request to their servers to send the actual
@@ -551,19 +564,26 @@ disqusShortname = ""
         # Footer section
         [languages.vi.params.footer]
           enable = true
-          copyright = "ASQ Vietnam - Giấy Phép đăng kí kinh doanh số 0316899312"
+          correspondence = "LIÊN HỆ: Email: contact@asq.vn  -  Tel: +84 9 9378 0100 (Whatsapp, Viber, Lines, Zalo) -  +84 9 6154 9824 (Japanese/English)"
+          address1 = "Trụ sở đăng kí: 106/2 khu phố 5, đường 185, Phường Phước Long, Thành phố Thủ Đức"
+          giaodich = "Văn phòng giao dịch: DragonHill, 15A Nguyễn Hữu Thọ, Nhà Bè"
+          address2 = "Văn phòng Hà Nội: 498 Đê La Thành, Đống Đa, Hà Nội"
+          copyright = "ASQ Việt Nam - Giấy Phép đăng kí kinh doanh số 0316899312"
+
+
+
 
           # Uses font awesome icons
 
-          [[languages.vi.params.footer.social]]
-            icon = "fa-github"
-            url= "https://www.github.com"
-            label = "GitHub"
+      #    [[languages.vi.params.footer.social]]
+      #      icon = "fa-github"
+      #      url= "https://www.github.com"
+      #      label = "GitHub"
 
-          [[languages.vi.params.footer.social]]
-            icon = "fa-linkedin"
-            url= "https://www.linkedin.com"
-            label = "LinkedIn"
+      #    [[languages.vi.params.footer.social]]
+      #      icon = "fa-linkedin"
+      #      url= "https://www.linkedin.com"
+      #      label = "LinkedIn"
 
           # [[languages.vi.params.footer.quicklinks]]
           #   text = "Design: "
