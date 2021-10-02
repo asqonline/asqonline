@@ -1,591 +1,297 @@
-baseURL = "/"
+# Site settings
+baseurl = "/"
 languageCode = "en-us"
-title = "ASQ Viet Nam"
-theme = "forty"
+title = "ASQ Vietnam"
+theme = "syna"
+enableGitInfo = true
+version = "0.17.3"
 
 DefaultContentLanguage = "en"
 
-#staticDir = ["static1", "static2"]
-
 [languages]
   [languages.en]
-    contentDir = "content/en"
-    title = "ASQ Viet Nam"
-  #  staticDir2 = "static"
-    languageName = "English"
+  contentDir = "content/en"
+#    title = "My blog"
     weight = 1
   [languages.vi]
-    contentDir = "content/vi"
-    title = "ASQ Viet Nam"
-    languageName = "Tiếng Việt"
-  #  staticDir = ["staticDir_override", "static_vi"]
+  contentDir = "content/vi"
+    title = "Công Ty ASQ Việt Nam"
     weight = 2
-
-    [languages.jp]
-      contentDir = "content/jp"
-      title = "ASQコンサルティング"
-      languageName = "日本語"
-    #  staticDir = ["staticDir_override", "static_vi"]
-      weight = 3
-
+#  [languages.jp]
+#  contentDir = "content/jp"
+  #    title = "Mon blogue"
+#    weight = 3
 
 defaultContentLanguageInSubdir = true
 
-
-
-# Enter your tracking code to enable Google Analytics
+# Google Analytics tracking
 googleAnalytics = "UA-20712415-4"
 
-# Enter your disqus shortname to enable comments
-disqusShortname = ""
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
+[outputs]
+  home = ["HTML", "JSON"]
 
-###English Content
+[frontmatter]
+date = ["date", "lastmod"]
+lastmod = ["lastmod", ":git", "date"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+     unsafe = true
 
 [params]
-  # You can use Markdown syntax for urls [text](//url.to/source)
-  # To create multi-line text in strings use the """example Text""" format
+#  DefaultContentLanguage = "en"
+  name = "ASQ Vietnam"
+  description = "Offshore Staffing and Consultancy"
+
+
+  [params.style]
+    #background = "secondary"
+
+  # Theme customizations
+  # Assets relative to 'static/'
+  [params.custom]
+    favicon = "favicon.ico"
+    favicon_ico_sizes = "16x16 32x32"
+    favicon_png = "favicon.png"
+    favicon_svg = "favicon.svg"
+
+  # Piwik tracking
+  [params.analytics.piwik]
+    #url = ""
+    #id = ""
+    #domain = "" # Track subdomains via "*.example.com"
+    # Optional hash for integrity check
+    #hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Optional, global disable switch for fontawesome related files
+  # For custom fontawesome js files use the custom.js method
+  [params.fontawesome]
+    disabled = false
+    pro = false
+
+  [params.colors]
+    primary = "#00838F"
+    secondary = "#868e96"
+    success = "#008f54"
+    info = "#00c9dc"
+    warning = "#fdf314"
+    danger = "#dc1200"
+    light = "#f8f9fa"
+    dark = "#343a40"
+
+# main/prepend/postpend menus are displayed in nav fragment.
+# Keep an eye out for updates. These will be moved out to make navbar more
+# configurable.
+#[[menu.main]]
+#  url = "/"
+#  name = "Home"
+#  weight = 10
+#DefaultContentLanguage = "en"
+[[menu.main]]
+  url = "#"
+  name = "Offshore Staffing"
+  weight = 10
+
+[[menu.main]]
+  url = "/consultancy"
+  name = "Consultancy"
+  weight = 20
+
+# [[menu.main]]
+#   url = "/team"
+#   name = "Team"
+#   weight = 30
+
+# [[menu.main]]
+#   url = "/partner"
+#   name = "Partners"
+#   weight = 40
+#
+# [[menu.main]]
+#   url = "/career"
+#   name = "Career"
+#   weight = 50
+
+
+[[menu.main]]
+  url = "#contact"
+  name = "Contact"
+  weight = 60
+
+[[menu.main]]
+  url = "/about"
+  name = "About Us"
+  weight = 70
+#  identifier = "about"
+  # hasChildren = true
+
+# [[menu.main]]
+#   url = "/about/team"
+#   name = "Our team"
+#   weight = 10
+#   parent = "about"
+#
+# [[menu.main]]
+#   url = "/about/office"
+#   name = "Our team"
+#   weight = 20
+#   parent = "about"
+
+
+[[menu.footer]]
+  url = "#"
+  name = "Offshore Staffing"
+  weight = 10
+
+[[menu.footer]]
+  url = "/consultancy"
+  name = "Consultancy"
+  weight = 30
+
+# [[menu.footer]]
+#   url = "#"
+#   name = "Events"
+#   weight = 30
+
+[[menu.copyright_footer]]
+  url = "/"
+  name = "Home"
+  weight = 10
+
+#[[menu.copyright_footer]]
+#  url = "#"
+#  name = "Another Link"
+#  weight = 30
+
+#[[menu.footer_social]]
+#  weight = 20
+#  name = "facebook"
+#  pre = "fab fa-facebook-f"
+#  url = "#"
+
+# [[menu.footer_social]]
+#   weight = 30
+#   name = "linkedin"
+#   pre = "fab fa-linkedin-in"
+#   url = "#"
+
+
+
+  [languages.vi.params]
+
+  #  Tieng Viet
+    name = "Công Ty TNHH ASQ Việt Nam"
+    description = "Offshore Staffing and Consultancy"
+
+
+    [languages.vi.params.style]
+      #background = "secondary"
+
+    # Theme customizations
+    # Assets relative to 'static/'
+    [languages.vi.params.custom]
+      favicon = "favicon.ico"
+      favicon_ico_sizes = "16x16 32x32"
+      favicon_png = "favicon.png"
+      favicon_svg = "favicon.svg"
+
+    # Piwik tracking
+    [languages.vi.params.analytics.piwik]
+      #url = ""
+      #id = ""
+      #domain = "" # Track subdomains via "*.example.com"
+      # Optional hash for integrity check
+      #hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+    # Optional, global disable switch for fontawesome related files
+    # For custom fontawesome js files use the custom.js method
+    [languages.vi.params.fontawesome]
+      disabled = false
+      pro = false
+
+    [languages.vi.params.colors]
+      primary = "#00838F"
+      secondary = "#868e96"
+      success = "#008f54"
+      info = "#00c9dc"
+      warning = "#fdf314"
+      danger = "#dc1200"
+      light = "#f8f9fa"
+      dark = "#343a40"
+
+  # main/prepend/postpend menus are displayed in nav fragment.
+  # Keep an eye out for updates. These will be moved out to make navbar more
+  # configurable.
+  #[[menu.main]]
+  #  url = "/"
+  #  name = "Home"
+  #  weight = 10
+
+
   #
-  # All icons using Fontawesome's icon font. Look at fontawesome.io/icons
-  # for more icons. The icons are represented by their corresponding
-  # CSS class.
-
-  # Provide your metadata here.
-  name = "ASQ Viet Nam"
-  description = "ASQ is a spin-off start up Team originated from ETH Zurich and Kyoto University specialized in engineering asset management and data analytics and data solution for engineering systems."
-
-  # Link custom assets relative to /static
-  custom_css = []
-  custom_js  = []
-  favicon    = "favicon.ico"
-
-  # Just a custom image variable, please define it in .md files for content.
-  image = ""
-
-  # 404 error customization
-  [params.error404]
-    heading = "Page couldn't be found"
-    text = "Please visit [this page](/)"
-
-  # Navigation Section
-  [params.navigation]
-    title = "ASQ"
-    subtitle = "For a better change"
-    menu = "Menu"
-    # Optional logo as brand stored in img/
-  #   logo = "/banner/logo.png"
-
-    [[params.navigation.links]]
-      name = "Home"
-      url = "#"
-
-#      [[params.navigation.links]]
-#        name = "News"
-#       url = "blogs/"
-
-
-#       [[params.navigation.links]]
-#         name = "Apps"
-#        url = "apps/"
-
-
-  #     [[params.navigation.links]]
-  #      name = "Our Expertise"
-  #      url = "whatwedo"
-
-
-#    [[params.navigation.links]]
-#      name = "Projects"
-  #    url = "projects"
-
-#    [[params.navigation.links]]
-#      name = "Meet Our Team"
-    #  url = "blogs/ipsum"
-
-
-#    [[params.navigation.links]]
-#        name = "Publications"
-  #      url = "elements.html"
-
-    # Add custom links here by uncommenting code below. To remove links just delete
-    # the [[params.navigation.links]] map associated with that link. Copy and paste
-    # code below if you need more links. Buttons work in the same way.
-    # [[params.navigation.links]]
-    #    name = "NameOfLink"
-    #    url = "UrlOfLink"
-
-    # Button Style 1
-    [[params.navigation.button1]]
-      name = "Tiếng Việt"
-      url = "/vi"
-
-
-    [[params.navigation.button1]]
-      name = "日本語"
-      url = "/jp/about/ASQ-brochure-Nihongo.pdf"
-
-    # Button Style 2
-    # [[params.navigation.button2]]
-    #   name = "Log In"
-    #   url = "#"
-
-
-  # Banner section
-  # Banner section
-  [params.banner]
-    # To change the background image on the homepage banner, replace 'banner.jpg' in
-    # the 'static/img' folder.
-    title = "ASQ Viet Nam"
-    subtitle = "ASQ is a strategic partner of EMAPTA (No. 1 BPO firm in the Philippines and Australia) in Vietnam for offshore staffing in various business sectors beside its founding services in Asset Management and Data Solutions for Engineering Systems. ASQ's research team is collaborating with Kyoto University, ETH Zurich, and the Institute of Smart City and Management of University of Economics Ho Chi Minh to provide training and education services for students and professionals as well as to conduct research on urban planning and asset management."
-    buttonText = "Get Started"
-    image = "/banner/banner.jpg"
-
-
-  # Tiles Section
-  [params.tiles]
-    enable = true
-    # Display your showcases here.
-
-    [[params.tiles.showcase]]
-      title = "Who We Are"
-      subtitle = "We are a team of professional research engineers, data scientists, business consultants, and educators. Our company offers two main stream of businesses: (1) Offshore Staffing and (2) Engineering Consultancy for nature and build assets. We are closely collaborating with Kyoto University, ETH Zurich, and Institute of Smart Cities and Management in Ho Chi Minh on conducting research and providing educational courses for students and future leaders."
-    #  image = "/banner/pic01.jpg"
-  #    url = "about/"
-
-# Originated in 2012 as a spin-off start up team from ETH Zurich, Switzerland and Kyoto University, Japan, We initially offerred engineering services in asset management and transportation engineering. Since 2020, ASQ has expanded services to offshore staffing and business process outsourcing services in various disciplines to Clients worldwide.
-
-    [[params.tiles.showcase]]
-      title = "Offshore Staffing"
-      subtitle = "In partnering with EMAPTA (No. 1 BPO firm in the Philippines and Australia), ASQ offers highly qualified Vietnamese staffs for global Clients in various areas such as engineering design drafting and modelling, software development, paralegal services, and data analytics. Ultilizing EMAPTA's best practices and systems, ASQ team is confident to deliver quality works meeting Client's requirements and expectation."
-  #    image = "/banner/pic02.jpg"
-  #    url = "whatwedo/tdd"
-
-
-  [[params.tiles.showcase]]
-    title = "Engineering Consultancy for Nature and Built Assets"
-    subtitle = "We offer a number of unique engineering services that requires high level of professionalism and expertises including urban asset management, transportation engineering and impact assessment, urban risk and resilience analysis, flood study and modelling, technical and environmental due diligence, and data analytics."
-#    image = "/banner/pic02.jpg"
-    url = "/about/ASQ-brochure-English.pdf"
-
-#     [[params.tiles.showcase]]
-#       title = "Technical Due Diligence"
-#       subtitle = "We conduct Due Diligence studies on building systems, Infrastructure systems, and industrial sites using innovative digital tools and by experienced engineers to help Capital Investors arriving at optimal Merging and Acquisition decisions"
-#       image = "/banner/pic02.jpg"
-# #      url = "whatwedo/tdd"
-#       url = "/about/ASQ-brochure-English.pdf"
-
-
-  #   [[params.tiles.showcase]]
-  #     title = "Asset Management"
-  #     subtitle = "We assist organizations to develop long term asset management blueprints and programs for sustainable growth. We build models to determine optimal preventive intervention strategies on assets using reliability based approach"
-  #     image = "/banner/pic03.jpg"
-  # #    url = "whatwedo/am"
-  #     url = "/about/ASQ-brochure-English.pdf"
-
-  #   [[params.tiles.showcase]]
-  #     title = "Data Analytics and Modelling"
-  #     subtitle = "We detect trends and identify bottlenecks of engineering systems using data science and advise Clients on effective solutions"
-  #     image = "/banner/pic04.jpg"
-  # #    url = "whatwedo/datascience"
-  #     url = "/about/ASQ-brochure-English.pdf"
-    # [[params.tiles.showcase]]
-    #   title = "Construction Marketing"
-    #   subtitle = "Conducting market research in construction sector and help Clients to select optimal sites or materials using supply and demand analysis"
-    #   image = "/banner/pic05.jpg"
-    #   url = "blogs/ipsum"
-
-    [[params.tiles.showcase]]
-      title = "Education & Training"
-      subtitle = "In close collaboration with ETH Zurich, Kyoto University, and Institute of Smart City and Management at the University of Economics Ho Chi Minh, we are providing short courses on data analytics and asset management for students and professionals."
-    #   image = "/banner/pic06.jpg"
-#      url = "whatwedo/training"
-
-#    [[params.tiles.showcase]]
-#      title = "Brochure "
-#      subtitle = "Download ASQ's Brochure in PDF format"
-#      image = "/banner/collaboration.png"
-#      url = "about/ASQ-brochure-English.pdf"
-    # You can make more showcases by copy and pasting the code above
-    # You can make more showcases by copy and pasting the code above
-
-#  [params.blog]
-    # All blogs defined in their own files. You can find example blogs
-    # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
-    # at the root of this Hugo site.
-    # For more informtion take a look at the README.
-    # To add more blogs just copy and paste the code.
-
-  # Section Type Two
-#  [params.two]
-#    enable = true
-#    title = "Our Blog"
-#    subtitle = """A collection of ASQ's news and articles"""
-#    buttonText = "Get Started"
-#    url = "blogs"
-
-
-  # Contact section
-#  [params.contact]
-#    enable = true
-#    buttonSend = "Send message"
-#    buttonClear = "Clear"
-
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below and uncomment
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-     formEmail = "contact@asq.vn"
-
-    # Contact Section
-    # You can add multiple emails, phone numbers, or addresses
-    # by copying the corresponding map with frontmatter code.
-    [[params.contact.email]]
-    title = "Email"
-    email = "contact@asq.vn"
-
-    [[params.contact.phone]]
-#    title = "Paul Nguyen"
-    phone = "+84 9 6154 9824 (Japanese/English)"
-
-    [[params.contact.phone]]
-#    title = "Nam Le"
-    phone = "+84 9 9378 0100 (Whatsapp, Viber, Lines, Zalo)"
-
-    [[params.contact.address]]
-    title =   "Registered Office - Ho Chi Minh"
-    street =  "106/2 Commute 5, str. 185, Ward Phuoc Long, Thu Duc City, Ho Chi Minh"
-
-    [[params.contact.address]]
-    title =   "Communication Office - Ho Chi Minh"
-    street =  "DragonHill, 15A Nguyen Huu Tho, Nha Be"
-
-
-    [[params.contact.address]]
-    title =   "Hanoi Office"
-    street =  "498 De La Thanh, Dong Da, Hanoi"
-
-  #  city = "Hung Yen"
-  #  country = "Vietnam"
-
-
-    [[params.contact.address]]
-    title =   "Manila Office"
-    street =  "Hildago Place, Rockwell, Makati, the Philippines"
-    city =    "+63 927 022 1899"
-  #  country = "Vietnam"
-
-#  [[params.contact.address]]
-#  title = "Manila Office"
-#  street = "Rockwell, Makati, Metro Manila, the Phillipines, 1200"
-
-#  city = "Hung Yen"
-#  country = "Vietnam"
-
-  # Footer section
-  [params.footer]
-    enable = true
-    correspondence = "CONTACT US: Email: contact@asq.vn  -  Tel: +84 9 9378 0100 (Whatsapp, Viber, Lines, Zalo) -  +84 9 6154 9824 (Japanese/English)"
-    address1 = "Registered Office: 106/2 Commute 5, str. 185, Ward Phuoc Long, Thu Duc City"
-    giaodich = "Correspondence Office: DragonHill, 15A Nguyen Huu Thọ, Nha Be, Ho Chi Minh"
-    address2 = "Hanoi Office: 498 De La Thanh, Dong Da"
-    copyright = "ASQ Vietnam - Company Registration No. 0316899312"
-
-
-
-
-#    [[params.footer.social]]
-#      icon = "fa-github"
-#      url= "https://www.github.com"
-#      label = "GitHub"
-
-#    [[params.footer.social]]
-#      icon = "fa-linkedin"
-#      url= "https://www.linkedin.com"
-#      label = "LinkedIn"
-
-    # [[params.footer.quicklinks]]
-    #   text = "Design: "
-    #   url= "https://www.html5up.net"
-    #   alt = "HTML5 UP"
-
-
-
-      ###Vietnamses Content
-
-      [languages.vi.params]
-        # You can use Markdown syntax for urls [text](//url.to/source)
-        # To create multi-line text in strings use the """example Text""" format
-        #
-        # All icons using Fontawesome's icon font. Look at fontawesome.io/icons
-        # for more icons. The icons are represented by their corresponding
-        # CSS class.
-
-        # Provide your metadata here.
-        name = "Your name"
-        description = "Your description"
-
-        # Link custom assets relative to /static
-        custom_css = []
-        custom_js  = []
-        favicon    = "favicon.ico"
-
-        # Just a custom image variable, please define it in .md files for content.
-        image = ""
-
-        # 404 error customization
-        [languages.vi.params.error404]
-          heading = "Page couldn't be found"
-          text = "Please visit [this page](/)"
-
-        # Navigation Section
-        [languages.vi.params.navigation]
-          title = "ASQ"
-          subtitle = "For a better change"
-          menu = "Trang Chủ"
-          # Optional logo as brand stored in img/
-  #         logo = "/banner/logo.png"
-
-    #      [[languages.vi.params.navigation.links]]
-    #        name = "Tin Tức"
-    #        url = "vi/blogs"
-
-  #          [[languages.vi.params.navigation.links]]
-  #            name = "Apps"
-  #           url = "apps/"
-    #      [[languages.vi.params.navigation.links]]
-    #          name = "Dịch Vụ"
-    #          url = "vi/whatwedo"
-
-
-  #        [[languages.vi.params.navigation.links]]
-  #          name = "Dự Án"
-      #      url = "projects"
-
-  #        [[languages.vi.params.navigation.links]]
-  #            name = "Đội Ngũ Tư Vấn"
-  #            url = "/vi"
-  #            url = "elements.html"
-
-
-  #        [[languages.vi.params.navigation.links]]
-  #          name = "Thư Viện"
-  #          url = "/vi"
-      #      url = "elements.html"
-
-          # Add custom links here by uncommenting code below. To remove links just delete
-          # the [[params.navigation.links]] map associated with that link. Copy and paste
-          # code below if you need more links. Buttons work in the same way.
-          # [[params.navigation.links]]
-          #    name = "NameOfLink"
-          #    url = "UrlOfLink"
-
-          # Button Style 1
-          [[languages.vi.params.navigation.button1]]
-            name = "English"
-            url = "/"
-
-          [[languages.vi.params.navigation.button1]]
-            name = "日本語"
-            url = "/jp/about/ASQ-brochure-Nihongo.pdf"
-          # Button Style 2
-  #        [[languages.vi.params.navigation.button2]]
-  #          name = "Log In"
-  #          url = "#"
-
-
-        # Banner section
-        [languages.vi.params.banner]
-          # To change the background image on the homepage banner, replace 'banner.jpg' in
-          # the 'static/img' folder.
-          title = "Cung cấp nhân lực quốc tế và tư vấn kĩ thuật"
-          subtitle = "ASQ là đối tác chiến lược EMAPTA, công ty BPO số 1 tại Phillipines và Úc chuyên về lĩnh vực cung ứng lao động chất lượng cao cho thị trường quốc tế, đặc biệt là thị trường bắc Mỹ và Úc. Bên cạnh dịch vụ cung cấp nhân lực cùng với EMAPTA, ASQ còn có thế mạnh trong dịch vụ tư vấn kĩ thuật và xử lý dữ liệu cho các hệ thống nhà cửa, đô thị, và các nhà máy. Thành viên của EMAPTA đã và đang hợp tác trong nghiên cứu khoa học với ETH Zurich, Kyoto University, Viện Đô Thị Thông Minh và Quản lý thuộc trường đại học Kinh Tế thành phố Hồ Chí Minh."
-          buttonText = "Tìm hiểu thêm"
-
-
-        # Tiles Section
-        [languages.vi.params.tiles]
-          enable = true
-          # Display your showcases here.
-
-          [[languages.vi.params.tiles.showcase]]
-            title = "Giới thiệu"
-            subtitle = "ASQ được thành lập như là một sản phẩm Spin-off từ các công trình nghiên cứu tại viện công nghệ thụy Sĩ ETH và đại học Kyoto Nhật Bản từ năm 2012. ASQ có thế mạnh trong lĩnh vực áp dụng các mô hình toán xác xuất thống kê và toán ứng dụng trong lĩnh vực xây dựng và quản lý thiết bị và tài sản hạ tầng. Vào năm 2020, ASQ hợp tác với công ty EMAPTA cung cấp dịch vụ cung cứng lao động chất lượng cao cho thị trường quốc tế thông qua mô hình BPO."
-            image = "/banner/pic01.jpg"
-            url = "vi/"
-            # url = "blogs/aliquam"
-
-          [[languages.vi.params.tiles.showcase]]
-            title = "Offshore Staffing"
-            subtitle = "Cùng với EMAPTA (công ty số 1 Philippines và Úc về dịch vụ BPO Offshore Staffing), ASQ tuyển tài năng trẻ người Việt, nói tiếng Anh thành thạo, để làm việc trực tiếp với khách hàng trên thế giới, đặc biệt cho thị trường Bắc Mỹ và Úc. Các tài năng được hưởng trọn vẹn hệ thống quản lý tiên tiến của EMAPTA và được hưởng các quyền lợi và các chế độ đãi ngộ tốt. ASQ đã và đang cung cấp tài năng cho các lĩnh vực như luật, tin học và lập trình, vẽ và thiết kế kĩ thuật, và phân tích dữ liệu. Xin vui lòng ghé thăm trang web của EMAPTA www.emapta.com."
-            url = "vi/"
-      #      url = "vi/whatwedo/tdd"
-
-    #        image = "/banner/pic02.jpg"
-              # url = "blogs/aliquam"
-
-          [[languages.vi.params.tiles.showcase]]
-            title = "Đánh giá các hệ thống kĩ thuật công trình"
-            subtitle = "ASQ giúp chủ đầu tư đưa ra được các quyết định chiến lược trong việc mua và sát nhập qua việc khảo sát và đánh giá và thẩm tra các hệ thống kĩ thuật như tòa nhà, công trình công nghiệp và nhà máy"
-  #          url = "vi/whatwedo/tdd"
-            url = "/about/ASQ-brochure-English.pdf"
-            image = "/banner/pic02.jpg"
-            # url = "blogs/aliquam"
-
-          [[languages.vi.params.tiles.showcase]]
-            title = "Quản lý tài sản công trình và thiết bị"
-            subtitle = "ASQ giúp doanh nghiệp và các tổ chức quản lý tốt tài sản thông qua việc phát triển các kế hoạch chiến lược và xây dựng các mô hình toán tối ưu để đưa ra các biện pháp bảo hành và bảo trì hợp lý và tối ưu"
-    #        url = "whatwedo/am"
-          url = "/about/ASQ-brochure-English.pdf"
-            image = "/banner/pic03.jpg"
-            # url = "blogs/tempus"
-
-          [[languages.vi.params.tiles.showcase]]
-            title = "Phân tích và xử lý dữ liệu"
-            subtitle = "Sử dụng các mô hình thống kê và cơ sở dữ liệu lớn để dự báo xu hướng và phát hiện ra các vấn đề của hệ thống, từ đó đưa ra cảnh báo sớm và các phương pháp xử lý tối ưu"
-            image = "/banner/pic04.jpg"
-            url = "/about/ASQ-brochure-English.pdf"
-    #        url = "whatwedo/datascience"
-            # url = "blogs/magna"
-
-          # [[languages.vi.params.tiles.showcase]]
-          #   title = "Nghiên cứu thị trường trong ngành xây dựng"
-          #   subtitle = "Chúng"
-          #   image = "/banner/pic04.jpg"
-          #   url = "blogs/ipsum"
-
-          # [[languages.vi.params.tiles.showcase]]
-          #   title = "Dịch vụ BPO"
-          #   subtitle = "Ipsum Dolor Sit Amet"
-          #   image = "/banner/pic05.jpg"
-          #   url = "blogs/ipsum"
-
-          [[languages.vi.params.tiles.showcase]]
-            title = "Nghiên cứu và Giáo Dục"
-            subtitle = "Phối hợp và cộng tác với  nhóm nghiên cứu của học viện ETH, Zurich, Thụy Sĩ và đại học Kyoto trong công tác nghiên cứu và giảng dạy, trang bị cho các kĩ sư tương lai các kiến thức tính toán độ tin cậy, thống kê, vận trù học, và toán ứng dụng tối ưu hệ thống"
-            image = "/banner/pic06.jpg"
-            url = "vi/"
-  #          url = "whatwedo/training"
-            # url = "blogs/ipsum"
-          # You can make more showcases by copy and pasting the code above
-
-
-  #        [[languages.vi.params.tiles.showcase]]
-  #          title = "Hồ sơ giới thiệu ASQ bản PDF"
-  #          subtitle = "Tải hồ sơ ASQ để biết thêm về năng lực, đề tài nghiên cứu, và các sản phẩm dịch vụ"
-  #          image = "/banner/collaboration.png"
-  #          url = "about/ASQbrochure-en.pdf"
-
-
-  #      [languages.vi.params.blog]
-          # All blogs defined in their own files. You can find example blogs
-          # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
-          # at the root of this Hugo site.
-          # For more informtion take a look at the README.
-          # To add more blogs just copy and paste the code.
-
-        # Section Type Two
-  #      [languages.vi.params.two]
-  #        enable = true
-  #        title = "Tin tức"
-  #        subtitle = """Thông tin về dự án và các bài viết chuyên môn """
-  #        buttonText = "Tìm hiểu thêm"
-  #        url = "vi/blogs"
-
-
-        # Contact section
-  #      [languages.vi.params.contact]
-  #        enable = true
-  #        buttonSend = "Gửi tin"
-  #        buttonClear = "Xóa"
-
-          # Since this template is static, the contact form uses www.formspree.io as a
-          # proxy. The form makes a POST request to their servers to send the actual
-          # email. Visitors can send up to a 1000 emails each month for free.
-          #
-          # What you need to do for the setup?
-          #
-          # - set your email address under 'email' below and uncomment
-          # - upload the generated site to your server
-          # - send a dummy email yourself to confirm your account
-          # - click the confirm link in the email from www.formspree.io
-          # - you're done. Happy mailing!
-          # formEmail = "example@domain.com"
-
-          # Contact Section
-          # You can add multiple emails, phone numbers, or addresses
-          # by copying the corresponding map with frontmatter code.
-          [[languages.vi.params.contact.email]]
-          title = "Thư điện tử"
-          email = "contact@asq.vn"
-
-          [[languages.vi.params.contact.phone]]
-    #      title = "Paul Nguyễn"
-          phone = "+84 9 6154 9824 (Tiếng Nhật/Tiếng Anh)"
-
-          [[languages.vi.params.contact.phone]]
-#          title = "Whatsapp, Lines, Viber, Zalo"
-          phone = "+84 9 8378 0100 (Whatsapp, Lines, Viber, Zalo)"
-
-    #      [[languages.vi.params.contact.phone]]
-    #      title = "Văn phòng Manila"
-    #      phone = "+63 927 022 1899"
-
-          [[languages.vi.params.contact.address]]
-          title =   "Trụ Sở Đăng Kí"
-          street =  "106/2 khu phố 5, đường 185, Phường Phước Long, Thành phố Thủ Đức"
-  #        city =    "+84 9 8378 0100 (Whatsapp, Lines, Viber, Zalo)"
-
-        [[languages.vi.params.contact.address]]
-        title =   "Văn phòng giao dịch - tp. Hồ Chí Minh"
-        street =  "DragonHill, 15A Nguyễn Hữu Thọ, Nhà Bè"
-        city =    "+84 9 8378 0100 (Whatsapp, Lines, Viber, Zalo)"
-
-          [[languages.vi.params.contact.address]]
-          title =   "Văn phòng Hà Nội"
-          street =  "498 Đê La Thành, Đống Đa, Hà Nội"
-    #     city =    "+84 9 6154 9824 (Tiếng Nhật/Tiếng Anh)"
-    #      country = "Việt Nam"
-
-
-          [[languages.vi.params.contact.address]]
-          title =   "Văn phòng tp. Manila"
-          street =  "Hildago Place, Rockwell, Makati, Philippines"
-          city =    "+63 927 022 1899"
-#      country = "Việt Nam"
-
-
-        # Footer section
-        [languages.vi.params.footer]
-          enable = true
-          correspondence = "LIÊN HỆ: Email: contact@asq.vn  -  Tel: +84 9 9378 0100 (Whatsapp, Viber, Lines, Zalo) -  +84 9 6154 9824 (Japanese/English)"
-          address1 = "Trụ sở đăng kí: 106/2 khu phố 5, đường 185, Phường Phước Long, Thành phố Thủ Đức"
-          giaodich = "Văn phòng giao dịch: DragonHill, 15A Nguyễn Hữu Thọ, Nhà Bè"
-          address2 = "Văn phòng Hà Nội: 498 Đê La Thành, Đống Đa, Hà Nội"
-          copyright = "ASQ Việt Nam - Giấy Phép đăng kí kinh doanh số 0316899312"
-
-
-
-
-          # Uses font awesome icons
-
-      #    [[languages.vi.params.footer.social]]
-      #      icon = "fa-github"
-      #      url= "https://www.github.com"
-      #      label = "GitHub"
-
-      #    [[languages.vi.params.footer.social]]
-      #      icon = "fa-linkedin"
-      #      url= "https://www.linkedin.com"
-      #      label = "LinkedIn"
-
-          # [[languages.vi.params.footer.quicklinks]]
-          #   text = "Design: "
-          #   url= "https://www.html5up.net"
-          #   alt = "Hi"
+  # [[languages.vi.menu.main]]
+  #   url = "vi/service"
+  #   name = "Dịch Vụ"
+  #   weight = 20
+  #
+  # [[languages.vi.menu.main]]
+  #   url = "vi/team"
+  #   name = "Nhân Sự"
+  #   weight = 30
+  #
+  # [[languages.vi.menu.main]]
+  #   url = "vi/partner"
+  #   name = "Đối Tác"
+  #   weight = 40
+  #
+  # [[languages.vi.menu.main]]
+  #   url = "vi/career"
+  #   name = "Tuyển Dụng"
+  #   weight = 50
+  #
+  #
+  # [[languages.vi.menu.main]]
+  #   url = "vi/contact"
+  #   name = "Liên Hệ"
+  #   weight = 60
+  #
+  #   [[languages.vi.menu.main]]
+  # #    url = "vi/about"
+  #     name = "Giới Thiệu"
+  #     weight = 70
+  #     identifier = "about"
+  #
+  #   [[languages.vi.menu.main]]
+  #     url = "vi/about/home"
+  #     name = "Giới Thiệu"
+  #     weight = 10
+  #     parent = "about"
+  #
+  #   [[languages.vi.menu.main]]
+  #     url = "vi/about/home"
+  #     name = "Giới Thiệu"
+  #     weight = 20
+  #     parent = "about"
+  #
+  # [[languages.vi.menu.footer]]
+  #   url = "http://www.emapta.com"
+  #   name = "Đối Tác Chiến Lược EMAPTA"
+  #   weight = 10
+  #
+  # [[languages.vi.menu.footer]]
+  #   url = "#"
+  #   name = "Blogs"
+  #   weight = 30
+  #
+  # [[languages.vi.menu.footer]]
+  #   url = "#"
+  #   name = "Sự Kiện"
+  #   weight = 30
+  #
+  # [[languages.vi.menu.copyright_footer]]
+  #   url = "vi/"
+  #   name = "Trang Chủ"
+  #   weight = 10
