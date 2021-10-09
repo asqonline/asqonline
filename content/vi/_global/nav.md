@@ -9,6 +9,7 @@ weight = 0
 #  url = "http://www.asq.vn"
 #  text = "Star" # default: "Star"
 #  icon = "fab fa-github" # defaults: "fab fa-github"
+sticky = true
 
 # Branding options
 [asset]

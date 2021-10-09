@@ -23,3 +23,7 @@ Trụ sở đăng ký: 106/2 khu phố 5, đường 185, Phường Phước Long
 Trụ sợ giao dịch: DragonHill, 15A Nguyễn Hữu Thọ, Nhà Bè
 
 Thư điện tử: contact@asq.vn
+
+Điện thoại: +84 98 422 34 87
+
+Whatsapp/Viber/Zalo/Line: +84983780100

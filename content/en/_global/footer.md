@@ -23,3 +23,7 @@ Registered Office: 106/2 Commute 5, str. 185, Ward Phuoc Long, Thu Duc City
 Correspondence Office: DragonHill, 15A Nguyen Huu Thọ, Nha Be, Ho Chi Minh
 
 Email: contact@asq.vn
+
+Phone: +84 98 422 34 87
+
+Whatsapp/Viber/Zalo/Line: +84983780100

@@ -28,7 +28,7 @@ title = "High Quality, Local Fee"
 +++
 
 
-Our service fee per talent is 30%-50% lower than that being offerred by other international BPO firms.
+Our service fee per talent is more competitive than that being offerred by other international BPO firms.
 
 This means your business will enjoy
 

@@ -93,12 +93,12 @@ lastmod = ["lastmod", ":git", "date"]
 #DefaultContentLanguage = "en"
 [[menu.main]]
   url = "#"
-  name = "Offshore Staffing"
+  name = "OFFSHORE STAFFING"
   weight = 10
 
 [[menu.main]]
   url = "/consultancy"
-  name = "Consultancy"
+  name = "CONSULTANCY"
   weight = 20
 
 # [[menu.main]]
@@ -117,39 +117,58 @@ lastmod = ["lastmod", ":git", "date"]
 #   weight = 50
 
 
-[[menu.main]]
-  url = "#contact"
-  name = "Contact"
-  weight = 60
+# [[menu.main]]
+#   url = "#contact"
+#   name = "CONTACT"
+#   weight = 60
 
 [[menu.main]]
   url = "/about"
-  name = "About Us"
+  name = "ABOUT US"
   weight = 70
-#  identifier = "about"
+  identifier = "about"
   # hasChildren = true
 
-# [[menu.main]]
-#   url = "/about/team"
-#   name = "Our team"
+#  [[menu.main]]
+#   url = "/about"
+#   name = "START-UP"
 #   weight = 10
+#   parent = "about"
+# #
+#
+# [[menu.main]]
+# #   url = "/about/office"
+#  name = "PROJECTS"
+#  weight = 20
+#  parent = "about"
+#
+#  [[menu.main]]
+# #   url = "/about/office"
+#   name = "BLOG"
+#   weight = 30
 #   parent = "about"
 #
 # [[menu.main]]
-#   url = "/about/office"
-#   name = "Our team"
-#   weight = 20
+#  #   url = "/about/office"
+#   name = "PARTNERS"
+#   weight = 30
 #   parent = "about"
-
-
+#   [[menu.main]]
+#   #   url = "/about/office"
+#   name = "CAREERS"
+#   weight = 50
+#   parent = "about"
+#
+#
+#
 [[menu.footer]]
   url = "#"
-  name = "Offshore Staffing"
+  name = "OFFSHORE STAFFING"
   weight = 10
 
 [[menu.footer]]
   url = "/consultancy"
-  name = "Consultancy"
+  name = "CONSULTANCY"
   weight = 30
 
 # [[menu.footer]]
@@ -277,15 +296,15 @@ lastmod = ["lastmod", ":git", "date"]
   #     weight = 20
   #     parent = "about"
   #
-  # [[languages.vi.menu.footer]]
-  #   url = "http://www.emapta.com"
-  #   name = "Đối Tác Chiến Lược EMAPTA"
-  #   weight = 10
+   [[languages.vi.menu.footer]]
+     url = "#"
+     name = "OFFSHORE STAFFING"
+     weight = 10
   #
-  # [[languages.vi.menu.footer]]
-  #   url = "#"
-  #   name = "Blogs"
-  #   weight = 30
+   [[languages.vi.menu.footer]]
+     url = "../consultancy"
+     name = "TƯ VẤN KĨ THUẬT"
+     weight = 30
   #
   # [[languages.vi.menu.footer]]
   #   url = "#"
