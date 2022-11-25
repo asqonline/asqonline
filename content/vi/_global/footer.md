@@ -18,9 +18,11 @@ menu_title = "Links"
 
 Đăng ký kinh doanh số: 0316899312
 
-Trụ sở đăng ký: 106/2 khu phố 5, đường 185, Phường Phước Long, Thành phố Thủ Đức
+Trụ sở đăng ký: 31/3, Đường 41, 7, Hiệp Bình Chánh, Thủ Đức, Hồ Chí Minh
 
 Trụ sợ giao dịch: DragonHill, 15A Nguyễn Hữu Thọ, Nhà Bè
+
+Văn phòng Hà Nội:	2001B, C1, Rừng Cọ, Ecopark, Xuân Quan, Hưng Yên
 
 Thư điện tử: contact@asq.vn
 

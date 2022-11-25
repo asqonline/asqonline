@@ -18,9 +18,11 @@ menu_title = "Links"
 
 Registration No: 0316899312
 
-Registered Office: 106/2 Commute 5, str. 185, Ward Phuoc Long, Thu Duc City
+Registered Office: 31/3, 41 Street, 7, Hiep Binh Chanh, Thu Duc City, Vietnam
 
-Correspondence Office: DragonHill, 15A Nguyen Huu Thọ, Nha Be, Ho Chi Minh
+Correspondence Office: 2401, DragonHill, 15A Nguyen Huu Thọ, Nha Be, Ho Chi Minh
+
+Hanoi office:	C2001B Rung Co, Ecopark Township, Xuan Quan, Hung Yen.
 
 Email: contact@asq.vn
 

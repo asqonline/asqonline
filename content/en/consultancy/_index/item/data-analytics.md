@@ -3,8 +3,8 @@ fragment = "item"
 #disabled = false
 date = "2017-10-04"
 weight = 140
-background = "dark"
-align = "left"
+background = "light"
+align = "right"
 
 title = "Data Analytics"
 #subtitle = ""
