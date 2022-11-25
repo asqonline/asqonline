@@ -17,7 +17,7 @@ title = "Our Story"
 ---
 
 
-**ASQ** team was found in 2016 by [Dr. Nam Le](https://namkyodai.github.io) and Paul Nguyen with its starting services in infrastructure asset management and data analytics. The services have been grounded on frontier research works (Spin-off) conducted in Kyoto University and Swiss Federal Institute of Technology (ETH Zurich).
+**ASQ** team was found in 2016 with its starting services in infrastructure asset management and data analytics. The services have been grounded on frontier research works (Spin-off) conducted in Kyoto University and Swiss Federal Institute of Technology (ETH Zurich).
 
 In 2020, ASQ formed a strategic partnership with EMAPTA (No. 1 BPO firm in Australia and the Philippines) to provide offshore staffing service in various sectors in Vietnam for International Clients.
 
